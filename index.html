@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/brand-color.css">
+</head>
+
+<body class="">
+    <header class="bg-gray-300 dark:bg-gray-950 text-black dark:text-white fixed w-full">
+        <div class=" bg-gray-300 dark:bg-gray-900 py-4 px-6 flex items-center justify-between">
+            <!-- Left column - Logo -->
+            <div class="flex items-center">
+                <img src="assets/images/logo.png" alt="Logo" class="h-8 mr-4">
+            </div>
+
+            <!-- Middle column - Menu (hidden on mobile) -->
+            <nav id="mobile-menu" class="hidden md:flex items-center space-x-4 font-concert text-xl">
+                <a href="#home" class="menu-link brand-hover-text transition ease-in-out delay-150 ">HOME</a>
+                <a href="#about" class="menu-link brand-hover-text transition ease-in-out delay-150 ">ABOUT</a>
+                <a href="#service" class="menu-link brand-hover-text transition ease-in-out delay-150 ">SERVICES</a>
+                <a href="#portfolio" class="menu-link brand-hover-text transition ease-in-out delay-150 ">PORTFOLIO</a>
+                <a href="#pricing" class="menu-link brand-hover-text transition ease-in-out delay-150 ">PRICING</a>
+                <a href="#contact" class="menu-link brand-hover-text transition ease-in-out delay-150 ">CONTACT</a>
+            </nav>
+
+            <!-- Right column - Button and Navbar Icon -->
+            <div class="flex items-center">
+                <!-- Button (visible on both mobile and desktop) -->
+                <button id="darkModeToggle" class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg id="lightIcon" class="fill-gray-900 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="darkIcon" class="fill-gray-300 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+
+                <!-- Navbar icon for mobile (hidden on desktop) -->
+                <button id="mobile-menu-btn" class="text-white focus:outline-none md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu-overlay" class="fixed inset-0 bg-gray-200 dark:bg-gray-900 bg-opacity-75 z-50 hidden">
+            <div id="mobile-menu-content"
+                class="bg-gray-200 dark:bg-gray-900 h-full w-full p-8 transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out">
+                <!-- Mobile menu content -->
+                <div class="flex justify-end">
+                    <button id="close-mobile-menu-btn" class=" focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="mt-2 space-y-4 font-concert grid grid-flow-col-1 text-xl text-center">
+                    <a href="#home" class="nav-item brand-hover-text transition ease-in-out delay-150 ">HOME</a>
+                    <a href="#about" class="nav-item brand-hover-text transition ease-in-out delay-150 ">ABOUT</a>
+                    <a href="#service" class="nav-item brand-hover-text transition ease-in-out delay-150 ">SERVICES</a>
+                    <a href="#portfolio" class="nav-item brand-hover-text transition ease-in-out delay-150 ">PORTFOLIO</a>
+                    <a href="#pricing" class="nav-item brand-hover-text transition ease-in-out delay-150 ">PRICING</a>
+                    <a href="#contact" class="nav-item brand-hover-text transition ease-in-out delay-150 ">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+    </header>
+
+    <main>
+        <section class="h-[500px] bg-red-600" id="home">1</section>
+        <section class="h-[500px] bg-red-700" id="about">2</section>
+        <section class="h-[500px] bg-red-800" id="service">3</section>
+        <section class="h-[500px] bg-red-900" id="portfolio">3</section>
+        <section class="h-[500px] bg-red-600" id="pricing">4</section>
+        <section class="h-[500px] bg-red-700" id="contact">5</section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
